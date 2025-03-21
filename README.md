@@ -1,7 +1,3 @@
-# HindgutContours
-
-# Contour Processing and Analysis
-
 ## Overview
 This repository contains MATLAB scripts and data for processing and analyzing contour shapes in embryos. The main script executes on continuous tracks of points in 3D along with their 2D mapping (here, in cylindrical coordinates). 
 
