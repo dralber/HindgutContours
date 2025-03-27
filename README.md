@@ -15,7 +15,7 @@ The `Data` folder includes:
 - **`FileList_Embryo230418.xlsx`**: Description of the light sheet imaging data used.
 
 ## Requirements
-- **MATLAB 2024**
+- **MATLAB 2024a**
 - The following MATLAB toolboxes:
   - **Statistics and Machine Learning**: Functions used: `KDTreeSearcher`, `knnsearch`
   - **Curve Fitting**: Functions used: `csaps`
