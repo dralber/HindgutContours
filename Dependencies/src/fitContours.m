@@ -121,7 +121,7 @@ end
 if opts.saveMovie
     hFig = figure();
     hFig.WindowState = 'normal';
-    hFig.Position = [50 50 800 800];
+    hFig.Position = [50 50 1200 1200];
     movieframes = {};
 end
 
