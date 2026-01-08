@@ -25,6 +25,7 @@ The `Data` folder includes:
 The following custom MATLAB functions are required:
 - `calcAxisLengthsContours`
 - `calcContourMetrics`
+- `calcDistBtwContours`
 - `calcSimError`
 - `calculateEnclosedArea`
 - `compareModelContours`
