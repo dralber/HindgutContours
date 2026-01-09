@@ -60,6 +60,7 @@ These external MATLAB functions are required:
 - `movavg`
 - `progressbar`
 - `shadedErrorBar`
+- `Violin`
 - `violinplot`
 
 ## Usage
