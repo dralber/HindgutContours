@@ -111,8 +111,11 @@ hold on
 scatter([1,2,3,4,5],embryo.contLengths(:,tp),300,'kx')
 title("Timepoint " + int2str(tp) + ", simulated vs real (X) contour circumference")
 ylabel("Circumference (\mum)")
-export_fig(fullfile(exportdir,name + "_SimulatedNoise_CircumferenceViolin_tp1"), ...
-'-native','-pdf')
+exportgraphics(gcf, fullfile(exportdir,name + "_SimulatedNoise_CircumferenceViolin_tp1.pdf"), ...
+    'ContentType', 'vector', ...
+    'BackgroundColor', 'none');
+% export_fig(fullfile(exportdir,name + "_SimulatedNoise_CircumferenceViolin_tp1"), ...
+% '-native','-pdf')
 
 currTpAreas = squeeze(simulatedAreas(:,tp,:));
 hFig = figure();
@@ -124,8 +127,11 @@ hold on
 scatter([1,2,3,4,5],embryo.areas(:,tp),300,'kx')
 title("Timepoint " + int2str(tp) + ", simulated vs real (X) contour areas")
 ylabel("Area (\mum^2)")
-export_fig(fullfile(exportdir,name + "_SimulatedNoise_AreaViolin_tp1"), ...
-'-native','-pdf')
+exportgraphics(gcf, fullfile(exportdir,name + "_SimulatedNoise_AreaViolin_tp1.pdf"), ...
+    'ContentType', 'vector', ...
+    'BackgroundColor', 'none');
+% export_fig(fullfile(exportdir,name + "_SimulatedNoise_AreaViolin_tp1"), ...
+% '-native','-pdf')
 
 currTpRoundness = squeeze(simulatedRoundness(:,tp,:));
 hFig = figure();
@@ -137,8 +143,11 @@ hold on
 scatter([1,2,3,4,5],embryo.areas(:,tp)./(embryo.contLengths(:,tp).^2),300,'kx')
 title("Timepoint " + int2str(tp) + ", simulated vs real (X) contour roundness")
 ylabel("Roundness")
-export_fig(fullfile(exportdir,name + "_SimulatedNoise_RoundnessViolin_tp1"), ...
-'-native','-pdf')
+exportgraphics(gcf, fullfile(exportdir,name + "_SimulatedNoise_RoundnessViolin_tp1.pdf"), ...
+    'ContentType', 'vector', ...
+    'BackgroundColor', 'none');
+% export_fig(fullfile(exportdir,name + "_SimulatedNoise_RoundnessViolin_tp1"), ...
+% '-native','-pdf')
 
 hFig = figure();
 hFig.WindowState = 'normal';
@@ -171,7 +180,10 @@ for i = 1:size(embryo.meanSimRo,1)
     xlabel('Timepoint')
     ylabel('Circumference (\mum)')
 end
-export_fig(fullfile(exportdir,name + "_MeasuredVsSimulatedOverTime"), ...
-'-native','-pdf')
+exportgraphics(gcf, fullfile(exportdir,name + "_MeasuredVsSimulatedOverTime.pdf"), ...
+    'ContentType', 'vector', ...
+    'BackgroundColor', 'none');
+% export_fig(fullfile(exportdir,name + "_MeasuredVsSimulatedOverTime"), ...
+% '-native','-pdf')
 
 end
