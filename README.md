@@ -57,6 +57,7 @@ The following custom MATLAB functions are required:
 
 ### External Dependencies
 These external MATLAB functions are required:
+- `export_fig` and its dependencies
 - `movavg`
 - `progressbar`
 - `shadedErrorBar`
