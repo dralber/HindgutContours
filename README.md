@@ -47,6 +47,7 @@ The following custom MATLAB functions are required:
 - `plotContourMetricsOverPosition`
 - `plotContourShapes`
 - `plotDistBtwContours`
+- `randomizePointsWithinDiameter`
 - `removeMarksFrom3DPlot`
 - `reparamContByArcLength`
 - `resampleContourToConstantSpeed`
