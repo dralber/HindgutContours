@@ -8,6 +8,7 @@
 %   Dependencies:
 %       calcAxisLengthsContours
 %       calcContourMetrics
+%       calcDistBtwContours
 %       calcSimError
 %       calculateEnclosedArea
 %       compareModelContours
@@ -30,6 +31,7 @@
 %       plotContourMetricsOverPosition
 %       plotContourShapes
 %       plotDistBtwContours
+%       randomizePointsWithinDiameter
 %       removeMarksFrom3DPlot
 %       reparamContByArcLength
 %       resampleContourToConstantSpeed
@@ -40,6 +42,7 @@
 %   Dependencies written by others (see headers for source):
 %       shadedErrorBar
 %       violinplot 
+%       Violin
 %       movavg
 %       progressbar
 %
